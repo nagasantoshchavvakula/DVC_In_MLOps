@@ -22,6 +22,7 @@ print("Cleaned columns:", data.columns.tolist())
 # Define features and target
 x = data[['YearsExperience']]
 y = data['Salary']
+y=y/10 
 
 # Train model
 model = LinearRegression()

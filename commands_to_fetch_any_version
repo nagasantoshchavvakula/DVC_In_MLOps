@@ -6,3 +6,5 @@ git checkout <commit_id>
 Pull the corresponding data or model version:
 
 dvc pull
+
+DVC ML documentation
