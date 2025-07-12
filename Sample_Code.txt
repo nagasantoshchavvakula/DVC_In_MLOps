@@ -1,0 +1,40 @@
+import pandas as pd
+
+# Load the CSV file
+data = pd.read_csv('Linear_Regression_Data.csv', encoding='ISO-8859-1')
+
+# Print original column names with clear formatting
+print("👉 Raw columns from file:")
+for col in data.columns:
+    print(f"'{col}'")
+
+# Clean column names
+data.columns = data.columns.str.strip()
+import pandas as pd
+
+# ✅ Use utf-16 encoding for proper reading
+data = pd.read_csv('Linear_Regression_Data.csv', encoding='utf-16')
+
+# Print original column names with clear formatting
+print("👉 Raw columns from file:")
+for col in data.columns:
+    print(f"'{col}'")
+
+# Clean column names
+data.columns = data.columns.str.strip()
+
+print("\n✅ Cleaned column names:")
+for col in data.columns:
+    print(f"'{col}'")
+
+# Optional: show first few rows to confirm structure
+print("\n📊 Preview of data:")
+print(data.head())
+
+print("\n✅ Cleaned column names:")
+for col in data.columns:
+    print(f"'{col}'")
+
+# Optional: show first few rows to confirm structure
+print("\n📊 Preview of data:")
+print(data.head())
